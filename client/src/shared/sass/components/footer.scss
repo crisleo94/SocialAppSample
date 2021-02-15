@@ -1,0 +1,22 @@
+.home_footer {
+  grid-area: footer;
+}
+
+.home_footer {
+  display: grid;
+  grid-template-columns: minmax(auto, 1200px);
+  justify-content: center;
+  padding-top: 5px;
+  background: linear-gradient(
+    -45deg,
+    rgba($color: #5f8fe8, $alpha: 1),
+    #0b2a63 0%,
+    #2f4266 0%
+  );
+  p {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    padding-top: 15px;
+  }
+}

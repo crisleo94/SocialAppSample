@@ -1,0 +1,9 @@
+.home_container {
+  display: grid;
+  grid-template-rows: 95vh 5vh;
+  grid-template-areas:
+    'left_area right_area'
+    'footer footer';
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
