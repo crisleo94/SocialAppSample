@@ -4,7 +4,7 @@
   "description": "Simple React + Parcel set up.",
   "main": "index.js",
   "scripts": {
-    "start": "BROWSER='chromium' parcel src/index.html --open",
+    "start": "cross-env BROWSER='chrome' parcel src/index.html --open",
     "build": "parcel build src/index.html",
     "test": "jest",
     "prettier": "prettier --check \"**/*.*\"",
@@ -30,6 +30,7 @@
     "@testing-library/jest-dom": "5.11.5",
     "@testing-library/react": "11.1.1",
     "babel-jest": "26.6.3",
+    "cross-env": "^7.0.3",
     "jest": "26.6.3",
     "jest-extended": "0.11.5",
     "jest-transform-stub": "2.0.0",
@@ -53,8 +54,6 @@
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "regenerator-runtime": "0.13.7",
-    "semantic-ui": "^2.4.2",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^2.0.3"
+    "semantic-ui-css": "^2.4.1"
   }
 }

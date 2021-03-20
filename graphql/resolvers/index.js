@@ -1,25 +1,25 @@
-const postsResolvers = require('./posts')
-const usersResolvers = require('./users')
-const commentsResolvers = require('./comments')
+const postsResolvers = require("./posts");
+const usersResolvers = require("./users");
+const commentsResolvers = require("./comments");
 
 module.exports = {
   Post: {
     likeCount(parent) {
-      console.log(parent)
-      return parent.likes.length
+      console.log(parent);
+      return parent.likes.length;
     },
     commentCount(parent) {
-      console.log(parent)
-      return parent.comments.length
+      console.log(parent);
+      return parent.comments.length;
     },
   },
   Query: {
     ...postsResolvers.Query,
-    ...usersResolvers.Query
+    ...usersResolvers.Query,
   },
   Mutation: {
     ...usersResolvers.Mutation,
     ...postsResolvers.Mutation,
-    ...commentsResolvers.Mutation
+    ...commentsResolvers.Mutation,
   },
-}
+};

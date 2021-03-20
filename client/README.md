@@ -1,7 +1,9 @@
 # react-parcel
+
 My personal React + Parcel set up
 
 ## Quick Overview
+
 Inside the newly created project, you can run some built-in commands:
 
 ### `npm start` or `yarn start`
